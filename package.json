@@ -1,0 +1,18 @@
+{
+  "name": "md-rezwanul-haque-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website for MD Rezwanul Haque — Software Engineer | Backend & .NET Developer",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "start": "npm run build && node tools/serve.mjs",
+    "serve": "node tools/serve.mjs --root .",
+    "preview": "node tools/serve.mjs",
+    "smoke": "node tools/smoke.mjs",
+    "test": "node tools/build.mjs && node tools/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

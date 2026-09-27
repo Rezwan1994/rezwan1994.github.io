@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Rezwanul Haque &ndash; Software Engineer | Backend &amp; .NET Developer</title>
+    <meta name="description" content="Portfolio of MD Rezwanul Haque, an AI-empowered Software Engineer with 8+ years of experience in C#, ASP.NET Core/.NET, REST APIs, Angular, SQL Server, Oracle, microservices, real-time systems and Microsoft Azure.">
+    <meta name="author" content="MD Rezwanul Haque">
+    <meta name="theme-color" content="#141824">
+    <meta name="color-scheme" content="dark">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="MD Rezwanul Haque &ndash; Software Engineer | Backend &amp; .NET Developer">
+    <meta property="og:description" content="AI-empowered Software Engineer with 8+ years of experience designing and modernizing business-critical .NET, cloud and real-time systems.">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#hero">Skip to main content</a>
+
+    <div class="page-glow" aria-hidden="true"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header id="navbar" class="header">
+        <div class="header__inner">
+            <a href="#hero" class="logo" aria-label="MD Rezwanul Haque — home">
+                <span class="logo__mark">&lt;/&gt;</span>
+                <span class="logo__text">rezwan<em>.dev</em></span>
+            </a>
+
+            <button id="nav-toggle" class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="slide-menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= SLIDE-IN MENU ================= -->
+    <div id="slide-menu" class="slide-menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+        <div class="slide-menu__scrim" data-close-menu></div>
+        <nav class="slide-menu__panel" aria-label="Primary">
+            <button id="menu-close" class="slide-menu__close" type="button" aria-label="Close menu" data-close-menu>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+
+            <p class="slide-menu__label">Navigation</p>
+            <ul class="slide-menu__list">
+                <li><a href="#hero" class="slide-menu__link" data-nav="hero" data-close-menu>Home</a></li>
+                <li><a href="#about" class="slide-menu__link" data-nav="about" data-close-menu>About Me</a></li>
+                <li><a href="#skill" class="slide-menu__link" data-nav="skill" data-close-menu>SkillSets</a></li>
+                <li><a href="#experience" class="slide-menu__link" data-nav="experience" data-close-menu>Experience</a></li>
+                <li><a href="#projects" class="slide-menu__link" data-nav="projects" data-close-menu>Projects</a></li>
+                <li><a href="#education" class="slide-menu__link" data-nav="education" data-close-menu>Education</a></li>
+                <li><a href="#contact" class="slide-menu__link" data-nav="contact" data-close-menu>Contact</a></li>
+            </ul>
+
+            <a href="assets/Md-Rezwanul-Haque-CV.pdf" download="Md-Rezwanul-Haque-CV.pdf" class="btn btn--grad btn--block slide-menu__cv" data-download-cv>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                <span>Download CV</span>
+            </a>
+
+            <div class="slide-menu__social">
+                <a href="https://www.linkedin.com/in/rezwanul-reza-a70381120" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5v9M6.5 5.6v.1M11 17.5v-5a2.5 2.5 0 0 1 5 0v5M11 8.5v9"/><rect x="2.5" y="2.5" width="19" height="19" rx="5"/></svg>
+                </a>
+                <a href="mailto:rezwan.aiub10@gmail.com" aria-label="Email me">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+                </a>
+                <a href="tel:+8801750425444" aria-label="Call me">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5L16 12l4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3Z"/></svg>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+    <main>
+        <!-- ================= HERO ================= -->
+        <section id="hero" class="hero band band--1">
+            <div class="hero__bg" aria-hidden="true"></div>
+            <div class="container hero__inner">
+                <div class="hero__copy">
+                    <h1 class="hero__hello reveal" data-reveal>
+                        Hello World<span class="hero__code">( <span class="muted">&lt;/&gt;</span> )</span>,
+                    </h1>
+
+                    <h2 class="hero__name reveal" data-reveal data-reveal-delay="1">I&rsquo;m <span class="hl">MD Rezwanul Haque</span></h2>
+
+                    <h3 class="hero__skills reveal" data-reveal data-reveal-delay="2">
+                        <span class="hero__skills-label">Skillset Includes</span>
+                        <span class="hero__skills-rotator">
+                            <span class="hl hl--typed" data-typed-roles></span><span class="caret" aria-hidden="true"></span>
+                        </span>
+                    </h3>
+
+                    <p class="hero__lead reveal" data-reveal data-reveal-delay="3">
+                        Software Engineer at <strong>Square Informatix Limited</strong> and remote Senior Software
+                        Engineer for <strong>Best Brain Inc.</strong> &mdash; building and modernizing business-critical
+                        systems with C#, ASP.NET Core, Angular, SQL&nbsp;Server and Microsoft Azure.
+                    </p>
+
+                    <div class="hero__actions reveal" data-reveal data-reveal-delay="4">
+                        <a href="assets/Md-Rezwanul-Haque-CV.pdf" download="Md-Rezwanul-Haque-CV.pdf" class="btn btn--grad btn--lg" data-download-cv>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                            <span>Download CV</span>
+                        </a>
+                        <a href="#contact" class="btn btn--grad btn--lg">Contact</a>
+                    </div>
+
+                    <!-- Hero stats strip -->
+                    <div class="stats reveal" data-reveal data-reveal-delay="5">
+                        <div class="stats__item">
+                            <span class="stats__num" data-count-to="8" data-pad="2" data-suffix="+">00+</span>
+                            <span class="stats__label">Years of Experience</span>
+                        </div>
+                        <div class="stats__item">
+                            <span class="stats__num" data-count-to="7" data-pad="2">00</span>
+                            <span class="stats__label">Selected Projects</span>
+                        </div>
+                        <div class="stats__item">
+                            <span class="stats__num" data-count-to="3" data-pad="2">00</span>
+                            <span class="stats__label">Engineering Roles</span>
+                        </div>
+                        <div class="stats__item">
+                            <span class="stats__num" data-count-to="6" data-pad="2">00</span>
+                            <span class="stats__label">Industry Domains</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual reveal" data-reveal data-reveal-delay="2">
+                    <div class="blob" aria-hidden="true"></div>
+                    <div class="blob__clip">
+                        <img src="assets/profile-photo.jpg" width="400" height="400" alt="Portrait of MD Rezwanul Haque, Software Engineer" class="blob__img" fetchpriority="high" decoding="async">
+                        <span class="blob__tint"></span>
+                    </div>
+
+                    <div class="orbit">
+                        <span class="orbit__badge orbit__badge--1">C#</span>
+                        <span class="orbit__badge orbit__badge--2">.NET</span>
+                        <span class="orbit__badge orbit__badge--3">Azure</span>
+                        <span class="orbit__badge orbit__badge--4">SQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section id="about" class="section band band--1" data-section="about">
+            <div class="container about">
+                <div class="about__side">
+                    <h2 class="h2 reveal" data-reveal>About <span class="hl">Me</span></h2>
+
+                    <div class="socials reveal" data-reveal>
+                        <a href="https://www.linkedin.com/in/rezwanul-reza-a70381120" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5v9M6.5 5.6v.1M11 17.5v-5a2.5 2.5 0 0 1 5 0v5M11 8.5v9"/><rect x="2.5" y="2.5" width="19" height="19" rx="5"/></svg>
+                        </a>
+                        <a href="mailto:rezwan.aiub10@gmail.com" aria-label="Email me">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+                        </a>
+                        <a href="tel:+8801750425444" aria-label="Call me">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5L16 12l4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3Z"/></svg>
+                        </a>
+                        <a href="assets/Md-Rezwanul-Haque-CV.pdf" download="Md-Rezwanul-Haque-CV.pdf" aria-label="Download my CV (PDF)" data-download-cv>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                        </a>
+                    </div>
+
+                    <a href="assets/Md-Rezwanul-Haque-CV.pdf" download="Md-Rezwanul-Haque-CV.pdf" class="btn btn--grad reveal" data-reveal data-download-cv>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+
+                <div class="about__body">
+                    <p class="reveal" data-reveal>
+                        I&rsquo;m an <strong>AI-empowered Software Engineer</strong> with <strong>8+ years</strong> of
+                        experience designing, developing, modernizing and supporting business-critical software
+                        solutions. My core expertise is C#, ASP.NET Core / .NET, RESTful Web APIs, SQL Server, Oracle,
+                        Angular, microservices, clean architecture, real-time systems, cloud services and database
+                        optimization.
+                    </p>
+                    <p class="reveal" data-reveal>
+                        I&rsquo;ve worked across the pharmaceutical, education, ERP, parliament, real estate and
+                        security/automation domains. At Square Informatix I led a Square Pharmaceuticals application
+                        carrying roughly <strong>BDT 300 crore</strong> in annual transaction volume and serving
+                        approximately <strong>3,000 concurrent users</strong>, and I modernized a Sales Process
+                        Automation System from an Oracle desktop application into a .NET Core web application.
+                    </p>
+                    <p class="reveal" data-reveal>
+                        Alongside my role at Square Informatix, I worked remotely with <strong>Best Brain Inc.</strong>
+                        as Senior Software Engineer, where I re-engineered their portal toward a microservices
+                        architecture and built real-time backend APIs with SignalR on Azure. I lean on AI-assisted and
+                        Spec-Driven Development to ship faster without sacrificing structure.
+                    </p>
+
+                    <ul class="facts">
+                        <li class="reveal" data-reveal><span>Focus</span>Backend &amp; .NET architecture</li>
+                        <li class="reveal" data-reveal data-reveal-delay="1"><span>Domains</span>Pharma &middot; Education &middot; ERP &middot; Parliament &middot; Real estate &middot; Security</li>
+                        <li class="reveal" data-reveal data-reveal-delay="2"><span>Education</span>MSc Computer Science, Jahangirnagar University</li>
+                        <li class="reveal" data-reveal data-reveal-delay="3"><span>Based in</span>Dhaka, Bangladesh &mdash; working remotely</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILL ================= -->
+        <section id="skill" class="section band band--1" data-section="skill">
+            <div class="container">
+                <h2 class="h2 h2--center reveal" data-reveal>My <span class="hl">SkillSets</span></h2>
+                <p class="section__sub section__sub--center reveal" data-reveal>
+                    A backend-first stack &mdash; C# and .NET at the core, with Angular on the front, SQL&nbsp;Server and
+                    Oracle underneath, and Azure on top.
+                </p>
+
+                <div class="skills">
+                    <article class="skill reveal" data-reveal>
+                        <span class="skill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 17-5-5 5-5m8 0 5 5-5 5m-2.5-13-3 16"/></svg>
+                        </span>
+                        <h3 class="skill__title">Backend &amp; .NET</h3>
+                        <ul class="tags">
+                            <li>C#</li><li>.NET</li><li>ASP.NET Core</li><li>ASP.NET MVC</li>
+                            <li>Web API</li><li>ADO.NET</li><li>Entity Framework Core</li><li>LINQ</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill reveal" data-reveal data-reveal-delay="1">
+                        <span class="skill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M12 12v10M3 7l9 5 9-5"/></svg>
+                        </span>
+                        <h3 class="skill__title">Architecture</h3>
+                        <ul class="tags">
+                            <li>Microservices</li><li>Clean Architecture</li><li>OOP</li>
+                            <li>RESTful APIs</li><li>SOAP / Web Services</li><li>Service Integration</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill reveal" data-reveal data-reveal-delay="2">
+                        <span class="skill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v11H3z"/><path d="M3 9.5h18M8 20l4-4 4 4"/></svg>
+                        </span>
+                        <h3 class="skill__title">Frontend</h3>
+                        <ul class="tags">
+                            <li>Angular 14</li><li>AngularJS</li><li>JavaScript</li><li>jQuery</li>
+                            <li>Razor</li><li>HTML</li><li>Bootstrap</li><li>Kendo UI</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill reveal" data-reveal>
+                        <span class="skill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="8" ry="3.2"/><path d="M4 5.5v6c0 1.8 3.6 3.2 8 3.2s8-1.4 8-3.2v-6"/><path d="M4 11.5v7c0 1.8 3.6 3.2 8 3.2s8-1.4 8-3.2v-7"/></svg>
+                        </span>
+                        <h3 class="skill__title">Databases</h3>
+                        <ul class="tags">
+                            <li>Microsoft SQL Server</li><li>Oracle</li><li>MongoDB</li>
+                            <li>Database Design</li><li>Query Optimization</li><li>Stored Procedures</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill reveal" data-reveal data-reveal-delay="1">
+                        <span class="skill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96 6 6 0 0 1 11.6-1.4A4.25 4.25 0 0 1 17.5 18Z"/></svg>
+                        </span>
+                        <h3 class="skill__title">Cloud &amp; DevOps</h3>
+                        <ul class="tags">
+                            <li>Microsoft Azure</li><li>Azure Functions</li><li>Cloud Storage</li>
+                            <li>Git</li><li>SVN</li><li>Docker</li><li>AWS</li><li>CI/CD</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill reveal" data-reveal data-reveal-delay="2">
+                        <span class="skill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M7.8 16.2 5 19"/></svg>
+                        </span>
+                        <h3 class="skill__title">Real-Time &amp; Services</h3>
+                        <ul class="tags">
+                            <li>SignalR</li><li>Worker Services</li><li>Background Processing</li><li>Real-Time Communication</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill reveal" data-reveal>
+                        <span class="skill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3.5 8 12 13l8.5-5L12 3Z"/><path d="M4 12.5 12 17l8-4.5M4 16.5 12 21l8-4.5"/></svg>
+                        </span>
+                        <h3 class="skill__title">AI &amp; Engineering</h3>
+                        <ul class="tags">
+                            <li>AI-Assisted Development</li><li>Spec-Driven Development</li>
+                            <li>Debugging</li><li>Performance Optimization</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE ================= -->
+        <section id="experience" class="section band band--2" data-section="experience">
+            <div class="container">
+                <h2 class="h2 h2--center reveal" data-reveal>Professional <span class="hl">Experience</span></h2>
+                <p class="section__sub section__sub--center reveal" data-reveal>
+                    Three engineering roles across pharmaceuticals, education technology and enterprise ERP.
+                </p>
+
+                <ol class="tl">
+                    <li class="tl__item reveal" data-reveal>
+                        <span class="tl__node" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 20V9l6-4 6 4v11M4 20h16M9 20v-5h4v5"/></svg>
+                        </span>
+                        <div class="tl__card">
+                            <span class="tl__date">2021 &ndash; Present</span>
+                            <h3 class="tl__title">Analyst Programer</h3>
+                            <p class="tl__org">Square Informatix Limited &middot; <span>Dhaka, Bangladesh</span></p>
+                            <p class="tl__tag">Current Role</p>
+                            <ul class="tl__points">
+                                <li>Led development and maintenance of a high-impact Square Pharmaceuticals application handling approximately <strong>BDT 300 crore</strong> in annual transaction volume.</li>
+                                <li>Supported a system serving approximately <strong>3,000 concurrent users</strong>, ensuring reliable operations and timely doctor commission disbursement.</li>
+                                <li>Modernized the Sales Process Automation System by migrating it from an Oracle desktop application to a .NET Core web application.</li>
+                                <li>Collaborated with business analysts, software architects and UX/UI designers throughout solution design and implementation.</li>
+                                <li>Developed and supported applications for Square Pharmaceuticals and other Square Group sister concerns.</li>
+                            </ul>
+                            <ul class="tags tags--sm">
+                                <li>ASP.NET Core</li><li>.NET Core</li><li>SQL Server 2018</li>
+                                <li>Oracle</li><li>Angular 14</li><li>Database Design</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="tl__item reveal" data-reveal>
+                        <span class="tl__node" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.8 2.8M15.2 15.2 18 18M18 6l-2.8 2.8M8.8 15.2 6 18"/></svg>
+                        </span>
+                        <div class="tl__card">
+                            <span class="tl__date">2024 &ndash; 2026</span>
+                            <h3 class="tl__title">Senior Software Engineer</h3>
+                            <p class="tl__org">Best Brain Inc. &middot; <span>Remote</span></p>
+                            <p class="tl__tag">Remote</p>
+                            <ul class="tl__points">
+                                <li>Designed and developed backend APIs for <strong>BB Support</strong>, an online session platform enabling real-time interaction between students and teachers.</li>
+                                <li>Re-engineered and modernized the existing Best Brain Portal from a traditional architecture toward a scalable microservices-based architecture.</li>
+                                <li>Developed and maintained RESTful APIs and backend services with strong emphasis on scalability, maintainability, performance, clean architecture and reliability.</li>
+                                <li>Leveraged AI-assisted software development and Spec-Driven Development to accelerate implementation, improve code quality and streamline engineering workflows.</li>
+                                <li>Worked extensively with Microsoft Azure services, including Azure Functions and cloud-based storage services, to build and support scalable backend solutions.</li>
+                                <li>Managed development tasks independently in a fully remote engineering environment using modern workflows and tools.</li>
+                            </ul>
+                            <ul class="tags tags--sm">
+                                <li>C#</li><li>ASP.NET Core / .NET</li><li>REST APIs</li><li>Microservices</li>
+                                <li>Clean Architecture</li><li>Azure</li><li>Azure Functions</li><li>SignalR</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="tl__item reveal" data-reveal>
+                        <span class="tl__node" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M3 7h18v13H3z"/><path d="M8 7V5a4 4 0 0 1 8 0v2M3 12h18"/></svg>
+                        </span>
+                        <div class="tl__card">
+                            <span class="tl__date">2020 &ndash; 2021</span>
+                            <h3 class="tl__title">Software Engineer</h3>
+                            <p class="tl__org">Piistech Limited &middot; <span>Dhaka, Bangladesh</span></p>
+                            <p class="tl__tag">ERP</p>
+                            <ul class="tl__points">
+                                <li>Developed ERP systems for American clients using ASP.NET MVC, Razor, Microsoft SQL Server, jQuery and clean architecture principles.</li>
+                                <li>Integrated third-party APIs, including payment gateways, into enterprise ERP solutions.</li>
+                                <li>Handled database design, query optimization, complex SQL queries and stored procedures.</li>
+                                <li>Worked directly with international clients to gather requirements and support software delivery.</li>
+                            </ul>
+                            <ul class="tags tags--sm">
+                                <li>ASP.NET MVC</li><li>Razor</li><li>Microsoft SQL Server</li>
+                                <li>jQuery</li><li>Clean Architecture</li><li>Third-party APIs</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+        <section id="projects" class="section band band--2" data-section="projects">
+            <div class="container">
+                <h2 class="h2 h2--center reveal" data-reveal>Recent <span class="hl">Projects</span></h2>
+                <p class="section__sub section__sub--center reveal" data-reveal>
+                    Business platforms across education, pharmaceuticals, parliament, real estate and security. Several
+                    are under NDA, so deeper case details are shared on request.
+                </p>
+
+                <div class="filters reveal" data-reveal role="group" aria-label="Filter projects by industry">
+                    <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter" type="button" data-filter="education" aria-pressed="false">Education</button>
+                    <button class="filter" type="button" data-filter="enterprise" aria-pressed="false">Enterprise</button>
+                    <button class="filter" type="button" data-filter="government" aria-pressed="false">Government</button>
+                    <button class="filter" type="button" data-filter="real-estate" aria-pressed="false">Real Estate</button>
+                    <button class="filter" type="button" data-filter="security" aria-pressed="false">Security</button>
+                </div>
+
+                <div class="projects" id="project-grid">
+                    <article class="project reveal" data-reveal data-category="education">
+                        <div class="project__thumb" aria-hidden="true"><span class="project__mono">BB</span></div>
+                        <div class="project__body">
+                            <span class="project__badge">Education</span>
+                            <h3 class="project__title">Best Brain Portal</h3>
+                            <p class="project__org">Best Brain Inc.</p>
+                            <p class="project__desc">
+                                Business-wide portal covering inventory, invoicing, shipment, order management and related
+                                operational workflows. I contributed to its modernization into a scalable,
+                                microservices-oriented platform.
+                            </p>
+                            <ul class="tags tags--sm">
+                                <li>ASP.NET Core / .NET</li><li>C#</li><li>REST APIs</li><li>Microservices</li>
+                                <li>Azure</li><li>Azure Functions</li><li>Cloud Storage</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-reveal data-reveal-delay="1" data-category="education">
+                        <div class="project__thumb" aria-hidden="true"><span class="project__mono">BB</span></div>
+                        <div class="project__body">
+                            <span class="project__badge">Education</span>
+                            <h3 class="project__title">BB Support</h3>
+                            <p class="project__org">Best Brain Inc.</p>
+                            <p class="project__desc">
+                                Backend APIs and services for an online session platform enabling real-time
+                                student&ndash;teacher interaction and support.
+                            </p>
+                            <ul class="tags tags--sm">
+                                <li>ASP.NET Core / .NET</li><li>REST APIs</li><li>SignalR</li><li>Azure</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-reveal data-reveal-delay="2" data-category="education">
+                        <div class="project__thumb" aria-hidden="true"><span class="project__mono">BB</span></div>
+                        <div class="project__body">
+                            <span class="project__badge">Education</span>
+                            <h3 class="project__title">BB Slate</h3>
+                            <p class="project__org">Best Brain Inc.</p>
+                            <p class="project__desc">
+                                Backend and platform capabilities for a student-focused educational application supporting
+                                online learning and student engagement.
+                            </p>
+                            <ul class="tags tags--sm">
+                                <li>.NET</li><li>REST APIs</li><li>Cloud Services</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-reveal data-category="enterprise">
+                        <div class="project__thumb" aria-hidden="true"><span class="project__mono">DI</span></div>
+                        <div class="project__body">
+                            <span class="project__badge">Enterprise</span>
+                            <h3 class="project__title">Doctor Investment System</h3>
+                            <p class="project__org">Square Pharmaceuticals Ltd.</p>
+                            <p class="project__desc">
+                                High-impact investment management platform handling approximately BDT 300 crore in annual
+                                transaction volume and ~3,000 concurrent users, including doctor commission disbursement.
+                            </p>
+                            <ul class="tags tags--sm">
+                                <li>ASP.NET Core</li><li>SQL Server 2018</li><li>Angular 14</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-reveal data-reveal-delay="1" data-category="government">
+                        <div class="project__thumb" aria-hidden="true"><span class="project__mono">PM</span></div>
+                        <div class="project__body">
+                            <span class="project__badge">Government</span>
+                            <h3 class="project__title">Private Member Regulation Management System</h3>
+                            <p class="project__org">Bangladesh Parliament</p>
+                            <p class="project__desc">
+                                PMRS for managing MP resolutions &mdash; from creation and approval through selection for
+                                balloting.
+                            </p>
+                            <ul class="tags tags--sm">
+                                <li>ASP.NET MVC</li><li>SQL Server 2018</li><li>AngularJS</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-reveal data-reveal-delay="2" data-category="real-estate">
+                        <div class="project__thumb" aria-hidden="true"><span class="project__mono">PQ</span></div>
+                        <div class="project__body">
+                            <span class="project__badge">Real Estate</span>
+                            <h3 class="project__title">Property Queen Malaysia</h3>
+                            <p class="project__org">Malaysia</p>
+                            <p class="project__desc">
+                                Map-based real estate portal connecting property owners, agents, developers and prospective
+                                buyers or lessees.
+                            </p>
+                            <ul class="tags tags--sm">
+                                <li>ASP.NET MVC</li><li>SQL Server 2018</li><li>Bootstrap</li><li>jQuery</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-reveal data-category="security">
+                        <div class="project__thumb" aria-hidden="true"><span class="project__mono">RMR</span></div>
+                        <div class="project__body">
+                            <span class="project__badge">Security</span>
+                            <h3 class="project__title">RMR Cloud</h3>
+                            <p class="project__org">RAB Business Security, USA</p>
+                            <p class="project__desc">
+                                Cloud-based business management platform for security and automation dealers, with
+                                permission-based tools and reporting.
+                            </p>
+                            <ul class="tags tags--sm">
+                                <li>ASP.NET MVC</li><li>SQL Server 2018</li><li>Bootstrap</li>
+                                <li>jQuery</li><li>Handlebars.js</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EDUCATION ================= -->
+        <section id="education" class="section band band--2" data-section="education">
+            <div class="container">
+                <h2 class="h2 h2--center reveal" data-reveal><span class="hl">Education</span></h2>
+                <p class="section__sub section__sub--center reveal" data-reveal>
+                    Computer Science, from undergraduate degree to master&rsquo;s.
+                </p>
+
+                <ol class="tl">
+                    <li class="tl__item reveal" data-reveal>
+                        <span class="tl__node" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="m2.5 8.5 9.5-4.5 9.5 4.5-9.5 4.5-9.5-4.5Z"/><path d="M6.5 10.8V16c0 1.7 2.5 3 5.5 3s5.5-1.3 5.5-3v-5.2M21.5 8.5v5"/></svg>
+                        </span>
+                        <div class="tl__card">
+                            <span class="tl__date">CGPA 3.30 / 4.00</span>
+                            <h3 class="tl__title">MSc in Computer Science</h3>
+                            <p class="tl__org">Jahangirnagar University</p>
+                        </div>
+                    </li>
+
+                    <li class="tl__item reveal" data-reveal>
+                        <span class="tl__node" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="m2.5 8.5 9.5-4.5 9.5 4.5-9.5 4.5-9.5-4.5Z"/><path d="M6.5 10.8V16c0 1.7 2.5 3 5.5 3s5.5-1.3 5.5-3v-5.2M21.5 8.5v5"/></svg>
+                        </span>
+                        <div class="tl__card">
+                            <span class="tl__date">2018 &ndash; 2021 &middot; CGPA 3.46 / 4.00</span>
+                            <h3 class="tl__title">BSc in Computer Science</h3>
+                            <p class="tl__org">American International University-Bangladesh</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ================= CTA BANNER ================= -->
+        <section class="banner band band--1">
+            <div class="container-narrow">
+                <h2 class="banner__title reveal" data-reveal>
+                    Let&rsquo;s build something <span class="hl">Reliable</span> &amp; <span class="hl">Scalable</span>
+                    <span class="muted">&lt;/&gt;</span>
+                </h2>
+                <div class="banner__actions reveal" data-reveal>
+                    <a href="#contact" class="btn btn--grad btn--lg">Contact</a>
+                    <a href="assets/Md-Rezwanul-Haque-CV.pdf" download="Md-Rezwanul-Haque-CV.pdf" class="btn btn--dark btn--lg" data-download-cv>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="section band band--1" data-section="contact">
+            <div class="container">
+                <h2 class="h2 h2--center reveal" data-reveal>Get In <span class="hl">Touch</span></h2>
+
+                <div class="contact">
+                    <div class="contact__info reveal" data-reveal>
+                        <h3 class="contact__info-title">
+                            Contact info
+                            <span class="muted">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="inline-icon"><path d="M21 3 3 10.5l7 3 3 7L21 3Z"/><path d="m10 13.5 4-4"/></svg>
+                            </span>
+                        </h3>
+                        <p class="contact__info-text">
+                            Open to backend, .NET and cloud engineering conversations &mdash; or a detailed walkthrough
+                            of any of the systems listed above.
+                        </p>
+
+                        <ul class="icon-list">
+                            <li>
+                                <span class="icon-list__badge">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+                                </span>
+                                <span class="icon-list__text">Dhaka, Bangladesh &mdash; working remotely</span>
+                            </li>
+                            <li>
+                                <span class="icon-list__badge">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5L16 12l4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3Z"/></svg>
+                                </span>
+                                <a class="icon-list__text" href="tel:+8801750425444">+880 1750 425444</a>
+                            </li>
+                            <li>
+                                <span class="icon-list__badge">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+                                </span>
+                                <a class="icon-list__text" href="mailto:rezwan.aiub10@gmail.com">rezwan.aiub10@gmail.com</a>
+                            </li>
+                        </ul>
+
+                        <a href="assets/Md-Rezwanul-Haque-CV.pdf" download="Md-Rezwanul-Haque-CV.pdf" class="btn btn--grad btn--block contact__cv" data-download-cv>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                            <span>Download CV (PDF)</span>
+                        </a>
+                    </div>
+
+                    <div class="contact__form-wrap reveal" data-reveal>
+                        <h3 class="contact__form-title">Just Say <span class="wave">&#128075;</span> Hi.</h3>
+                        <p class="contact__form-sub">
+                            Fill this in and your email client opens with the message pre-filled, ready to send to
+                            <strong>rezwan.aiub10@gmail.com</strong>.
+                        </p>
+
+                        <form id="contact-form" novalidate>
+                            <div class="field">
+                                <label for="cf-name">Your name</label>
+                                <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required>
+                                <span class="field__error" data-error-for="cf-name"></span>
+                            </div>
+                            <div class="field">
+                                <label for="cf-email">Your email</label>
+                                <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required>
+                                <span class="field__error" data-error-for="cf-email"></span>
+                            </div>
+                            <div class="field">
+                                <label for="cf-subject">Subject</label>
+                                <input id="cf-subject" name="subject" type="text" placeholder="Backend engineering opportunity" required>
+                                <span class="field__error" data-error-for="cf-subject"></span>
+                            </div>
+                            <div class="field">
+                                <label for="cf-message">Write a message</label>
+                                <textarea id="cf-message" name="message" rows="4" placeholder="Tell me about the role, the product or the problem you are working on..." required></textarea>
+                                <span class="field__error" data-error-for="cf-message"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn--grad btn--block btn--lg form__submit">Submit</button>
+                            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+
+                            <button type="button" class="btn btn--dark btn--block copy-btn" id="copy-email" data-copy="rezwan.aiub10@gmail.com">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/></svg>
+                                <span>Copy email address</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="#hero" class="logo logo--footer" aria-label="MD Rezwanul Haque — back to top">
+                <span class="logo__mark">&lt;/&gt;</span>
+                <span class="logo__text">rezwan<em>.dev</em></span>
+            </a>
+
+            <p class="footer__copy">&copy; <span id="current-year">2026</span> MD Rezwanul Haque &mdash; All Rights Reserved</p>
+
+            <div class="socials socials--footer">
+                <a href="https://www.linkedin.com/in/rezwanul-reza-a70381120" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5v9M6.5 5.6v.1M11 17.5v-5a2.5 2.5 0 0 1 5 0v5M11 8.5v9"/><rect x="2.5" y="2.5" width="19" height="19" rx="5"/></svg>
+                </a>
+                <a href="mailto:rezwan.aiub10@gmail.com" aria-label="Email me">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+                </a>
+                <a href="tel:+8801750425444" aria-label="Call me">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5L16 12l4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3Z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="to-top" type="button" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
+    </button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
